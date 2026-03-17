@@ -207,21 +207,152 @@ body {
     background: #2980b9;
 }
 
-.site-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+.hero {
+ text-align: center;
+ padding: 60px 20px;
+ background: linear-gradient(135deg, #1a73e8, #00c6ff);
+ color: white;
 }
 
-.site-footer a {
-    color: #3498db;
-    text-decoration: none;
+.hero h2 {
+ font-size: 2em;
+ margin-bottom: 1rem;
 }
 
-.site-footer a:hover {
-    text-decoration: underline;
+.hero p {
+ font-size: 1.2rem;
+ margin-bottom: 2rem;
+}
+
+.btn {
+ display: inline-block;
+ margin-top: 20px;
+ background: white;
+ color: #1a73e8;
+ padding: 15px 30px;
+ border-radius: 8px;
+ font-weight: bold;
+ text-decoration: none;
+ transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.features {
+ display: flex;
+ gap: 20px;
+ justify-content: center;
+ margin: 40px 0;
+ flex-wrap: wrap;
+}
+
+.features .card {
+ background: white;
+ padding: 30px;
+ border-radius: 12px;
+ box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+ text-align: center;
+ min-width: 200px;
+ transition: transform 0.3s;
+}
+
+.features .card:hover {
+ transform: translateY(-5px);
+}
+
+.latest {
+ padding: 40px 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.latest h2 {
+ text-align: center;
+ margin-bottom: 2rem;
+ font-size: 2rem;
+ color: #2c3e50;
+}
+
+footer {
+ text-align: center;
+ padding: 30px 20px;
+ background: #111;
+ color: white;
+ margin-top: 60px;
+}
+
+/* Navigation styling */
+header {
+ background: #2c3e50;
+ color: white;
+ padding: 1rem 2rem;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+}
+
+header h1 {
+ margin: 0;
+ font-size: 1.5rem;
+ display: inline;
+ margin-right: 2rem;
+ vertical-align: middle;
+}
+
+header nav {
+ display: inline;
+ vertical-align: middle;
+}
+
+header nav a {
+ display: inline-block;
+ color: white;
+ font-weight: bold;
+ text-decoration: none;
+ padding: 8px 15px;
+ margin: 0 5px;
+}
+
+header nav a:hover {
+ text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+ header {
+   text-align: center;
+ }
+ 
+ header h1 {
+   display: block;
+   margin-right: 0;
+   margin-bottom: 1rem;
+ }
+ 
+ header nav {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+ }
+ 
+ .features {
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .features .card {
+   width: 80%;
+   max-width: 300px;
+ }
+ 
+ .btn {
+   padding: 12px 24px;
+   font-size: 1rem;
+ }
 }
 
 @media (max-width: 768px) {
